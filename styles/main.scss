@@ -27,10 +27,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
     box-sizing: border-box;
     margin: 0 1rem;
     max-width: 600px;
-    min-height: 360px;
+    min-height: 340px;
     background-color: $Dark-Grayish-Blue;
     color: $Light-Cyan;
     text-align: center;
@@ -40,17 +41,28 @@ main {
     .advice-number {
       margin: 0;
       color: $Neon-Green;
-      font-size: 1.1rem;
+      font-size: 0.95rem;
       text-transform: uppercase;
       font-weight: 300;
       letter-spacing: 0.3rem;
     }
 
+    .advice {
+      width: 85%;
+      margin: 0;
+      color: $Light-Cyan;
+    }
+
     picture {
       width: 100%;
+      margin-bottom: 1.5rem;
 
       .divider {
         width: 100%;
+      }
+
+      #mobile-divider-img {
+        display: none;
       }
     }
 
@@ -72,6 +84,37 @@ main {
 
       .icon-dice-img {
         width: 22px;
+      }
+    }
+
+    .dice-btn:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 26px $Neon-Green;
+    }
+
+    .dice-btn:active {
+      background-color: $Grayish-Blue;
+    }
+
+    @media (max-width: 500px) {
+      padding: 2rem 1rem;
+
+      .advice-number {
+        font-size: 0.85rem;
+      }
+
+      .advice {
+        font-size: 1.6rem;
+      }
+
+      picture {
+        #desktop-divider-img {
+          display: none;
+        }
+
+        #mobile-divider-img {
+          display: block;
+        }
       }
     }
   }
