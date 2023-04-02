@@ -70,7 +70,7 @@ main {
       display: none;
     }
 
-    .dice-btn {
+    .advice-btn {
       position: absolute;
       border: none;
       display: flex;
@@ -81,18 +81,19 @@ main {
       height: 58px;
       border-radius: 50%;
       bottom: -28px;
+      transition: all .2s;
 
       .icon-dice-img {
         width: 22px;
       }
     }
 
-    .dice-btn:hover {
+    .advice-btn:hover {
       cursor: pointer;
       box-shadow: 0px 0px 26px $Neon-Green;
     }
 
-    .dice-btn:active {
+    .advice-btn:active {
       background-color: $Grayish-Blue;
     }
 
